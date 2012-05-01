@@ -1,0 +1,60 @@
+Current configuration : 1004 bytes<br />
+!<br />
+version 12.4<br />
+no service timestamps log datetime msec<br />
+no service timestamps debug datetime msec<br />
+no service password-encryption<br />
+!<br />
+hostname Router<br />
+!<br />
+!<br />
+interface FastEthernet0/0<br />
+ no ip address<br />
+ duplex auto<br />
+ speed auto<br />
+!<br />
+interface FastEthernet0/0.2<br />
+ encapsulation dot1Q 2<br />
+ ip address 192.168.2.254 255.255.255.0<br />
+!<br />
+interface FastEthernet0/0.4<br />
+ encapsulation dot1Q 4<br />
+ ip address 192.168.4.254 255.255.255.0<br />
+!<br />
+interface FastEthernet0/0.6<br />
+ encapsulation dot1Q 6<br />
+ ip address 192.168.6.254 255.255.255.0<br />
+!<br />
+interface FastEthernet0/0.8<br />
+ encapsulation dot1Q 8<br />
+ ip address 192.168.8.254 255.255.255.0<br />
+!<br />
+interface FastEthernet0/0.10<br />
+ encapsulation dot1Q 10<br />
+ ip address 192.168.10.254 255.255.255.0<br />
+!<br />
+interface FastEthernet0/0.12<br />
+ encapsulation dot1Q 12<br />
+ ip address 192.168.12.254 255.255.255.0<br />
+!<br />
+interface FastEthernet0/1<br />
+ no ip address<br />
+ duplex auto<br />
+ speed auto<br />
+ shutdown<br />
+!<br />
+interface Vlan1<br />
+ no ip address<br />
+ shutdown<br />
+!<br />
+ip classless<br />
+!<br />
+!<br />
+!<br />
+line con 0<br />
+line vty 0 4<br />
+ login<br />
+!<br />
+!<br />
+!<br />
+end

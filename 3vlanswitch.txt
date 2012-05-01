@@ -1,0 +1,131 @@
+Current configuration : 2340 bytes
+<br />!
+<br />version 12.1
+<br />no service timestamps log datetime msec
+<br />no service timestamps debug datetime msec
+<br />no service password-encryption
+<br />!
+<br />hostname MainSwitch
+<br />!
+<br />enable secret 5 $1$mERr$hx5rVt7rPNoS4wqbXKX7m0
+<br />!
+<br />no ip domain-lookup
+<br />!
+<br />!
+<br />interface FastEthernet0/1
+<br /> switchport access vlan 2
+<br /> switchport mode access
+<br />!
+<br />interface FastEthernet0/2
+<br /> switchport access vlan 2
+<br /> switchport mode access
+<br />!
+<br />interface FastEthernet0/3
+<br /> switchport access vlan 2
+<br /> switchport mode access
+<br />!
+<br />interface FastEthernet0/4
+<br /> switchport access vlan 2
+<br /> switchport mode access
+<br />!
+<br />interface FastEthernet0/5
+<br /> switchport access vlan 2
+<br /> switchport mode access
+<br />!
+<br />interface FastEthernet0/6
+<br /> switchport access vlan 2
+<br /> switchport mode access
+<br />!
+<br />interface FastEthernet0/7
+<br /> switchport access vlan 2
+<br /> switchport mode access
+<br />!
+<br />interface FastEthernet0/8
+<br /> switchport access vlan 2
+<br /> switchport mode access
+<br />!
+<br />interface FastEthernet0/9
+<br /> switchport access vlan 3
+<br /> switchport mode access
+<br />!
+<br />interface FastEthernet0/10
+<br /> switchport access vlan 3
+<br /> switchport mode access
+<br />!
+<br />interface FastEthernet0/11
+<br /> switchport access vlan 3
+<br /> switchport mode access
+<br />!
+<br />interface FastEthernet0/12
+<br /> switchport access vlan 3
+<br /> switchport mode access
+<br />!
+<br />interface FastEthernet0/13
+<br /> switchport access vlan 3
+<br /> switchport mode access
+<br />!
+<br />interface FastEthernet0/14
+<br /> switchport access vlan 3
+<br /> switchport mode access
+<br />!
+<br />interface FastEthernet0/15
+<br /> switchport access vlan 3
+<br /> switchport mode access
+<br />!
+<br />interface FastEthernet0/16
+<br /> switchport access vlan 3
+<br /> switchport mode access
+<br />!
+<br />interface FastEthernet0/17
+<br /> switchport access vlan 4
+<br /> switchport mode access
+<br />!
+<br />interface FastEthernet0/18
+<br /> switchport access vlan 4
+<br /> switchport mode access
+<br />!
+<br />interface FastEthernet0/19
+<br /> switchport access vlan 4
+<br /> switchport mode access
+<br />!
+<br />interface FastEthernet0/20
+<br /> switchport access vlan 4
+<br /> switchport mode access
+<br />!
+<br />interface FastEthernet0/21
+<br /> switchport access vlan 4
+<br /> switchport mode access
+<br />!
+<br />interface FastEthernet0/22
+<br /> switchport access vlan 4
+<br /> switchport mode access
+<br />!
+<br />interface FastEthernet0/23
+<br /> switchport access vlan 4
+<br /> switchport mode access
+<br />!
+<br />interface FastEthernet0/24
+<br /> switchport mode trunk
+<br />!
+<br />interface Vlan1
+<br /> no ip address
+<br /> shutdown
+<br />!
+<br />banner motd ^CGET OUT OF HERE^C
+<br />!
+<br />line con 0
+<br /> password class
+<br /> logging synchronous
+<br /> login
+<br /> exec-timeout 5 0
+<br />!
+<br />line vty 0 4
+<br /> exec-timeout 5 0
+<br /> password class
+<br /> logging synchronous
+<br /> login
+<br />line vty 5 15
+<br /> login
+<br />!
+<br />!
+<br />end
